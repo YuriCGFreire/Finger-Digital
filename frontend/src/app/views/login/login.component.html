@@ -1,0 +1,32 @@
+<div class="grid flex justify-content-center">
+  <div class="col-10 md:col-6 lg:col-4 mt-8">
+    <p-card>
+      <div class="grid">
+        <div class="col-12 text-center">
+          <i class="far fa-user fa-4x"></i>
+          <h2>Login</h2>
+        </div>
+        <div class="col-12">
+          <label for="">E-mail: </label>
+          <input [(ngModel)]="requestLogin.email" type="text" class="col-12 mt-2" pInputText />
+        </div>
+        <div class="col-12">
+          <label for="">Senha: </label>
+          <input [(ngModel)]="requestLogin.password" type="password" class="col-12 mt-2" pInputText />
+        </div>
+        <div class="col-12 flex justify-content-between">
+          <button
+          (click)="navigateToSignup()"
+          pButton type="button"
+          label="Cadastrar"
+          class="p-button-outlined col-4"></button>
+          <button
+          (click)="login()"
+          pButton type="button"
+          label="Entrar"
+          class="p-button-outlined col-4"></button>
+        </div>
+      </div>
+    </p-card>
+  </div>
+</div>
